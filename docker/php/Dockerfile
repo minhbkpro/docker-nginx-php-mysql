@@ -1,4 +1,6 @@
-FROM php:7-fpm
+ARG version
+
+FROM php:${version}
 
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
