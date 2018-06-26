@@ -10,6 +10,11 @@ server {
     access_log /var/log/nginx/access.log;
     root /usr/src/www;
 
+    # direct all requests to index.php
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
     location ~ \.php$ {
         try_files $uri =404;
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
