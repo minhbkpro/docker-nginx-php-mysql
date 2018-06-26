@@ -40,11 +40,12 @@ services:
       - 3300:3306
     volumes:
       - ./mysql:/var/lib/mysql
+    command: --innodb-flush-method=O_DSYNC --innodb-use-native-aio=0
   composer:
     image: composer
     container_name: composer
     volumes:
-      - ".:/app"
+      - .:/app
     command: install
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
