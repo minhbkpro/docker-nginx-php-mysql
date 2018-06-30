@@ -42,7 +42,7 @@ From your host computer:
 
 | Name     | Value |
 | -------- | ----- |
-| host     | on window: 192.168.99.100 \n on OSX, Linux: 0.0.0.0 |
+| host     | on window:     192.168.99.100<br>on OSX, Linux: 0.0.0.0 |
 | username | dev   |
 | password | dev   |
 | database | dev   |
