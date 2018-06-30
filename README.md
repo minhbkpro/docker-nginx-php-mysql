@@ -84,3 +84,9 @@ Example:
 ```
 docker run --rm --interactive --tty --volume $PWD:/app composer install
 ```
+
+# run npm command
+
+```
+docker run -v "$PWD":/usr/src/app -w /usr/src/app node npm command_here
+```
