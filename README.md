@@ -72,3 +72,15 @@ From your host computer:
 | password | dev   |
 | database | dev   |
 | port     | 3300  |
+
+# Run composer command
+
+```
+docker run --rm --interactive --tty --volume $PWD:/app composer command_here
+```
+
+Example:
+
+```
+docker run --rm --interactive --tty --volume $PWD:/app composer install
+```
