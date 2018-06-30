@@ -5,6 +5,7 @@
 #### 3. Run: ```docker-compose up -d```
 #### 4. Access website
 On window:
+| Service    | Url                 |
 | ---------- | ------------------- |
 | website    | 192.168.99.100:8000 |
 | phpMyAdmin | 192.168.99.100:8088 |
