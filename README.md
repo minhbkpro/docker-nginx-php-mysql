@@ -10,11 +10,11 @@ Build: ```docker-compose build --no-cache```
 
 Run: ```docker-compose up -d```
 
-# Config your webroot
+# Config webroot
 
-By default nginx will run index.php file at your project's root, but if your project is required to run index.php in other folder (ex: public or webroot folder), you need to change nginx config.
+By default nginx will run index.php file at your project's root, but if your project is required to run index.php in other folder like ```public``` or ```webroot``` in some framework, you need to change nginx config.
 
-Example, your project folder like this:
+Suppose, your project folder like this:
 
 ```
 .
