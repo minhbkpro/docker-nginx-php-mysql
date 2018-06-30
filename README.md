@@ -33,7 +33,7 @@ Example, your project folder like this:
 
 Then in ```/docker/nginx/default.template```
 
-Change this line ```root /usr/src/www;``` to ```root /usr/src/www/app/public```
+Change this line ```root /usr/src/www;``` to ```root /usr/src/www/app/public;```
 
 # Access website
 
