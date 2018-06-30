@@ -16,18 +16,18 @@ By default nginx will run index.php file at your project's root, but if your pro
 
 Example, your project folder like this:
 
-.
-├── app/
-│   ├── ...
-│   ├── public/
-│       ├── index.php
-│       ├── css/
-│       ├── js/
-│       └── ...
-│   └── ...
-├── docker/
-├── docker-compose.yml
-└── ...
+    .
+    ├── app/
+    │   ├── ...
+    │   ├── public/
+    │       ├── index.php
+    │       ├── css/
+    │       ├── js/
+    │       └── ...
+    │   └── ...
+    ├── docker/
+    ├── docker-compose.yml
+    └── ...
 
 Then in ```/docker/nginx/default.template```
 Change this line ```root /usr/src/www;``` to ```root /usr/src/www/app/public```
