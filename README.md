@@ -73,6 +73,17 @@ From your host computer:
 | database | dev   |
 | port     | 3300  |
 
+MySQL shell access:
+
+```
+docker exec -it mysql bash
+```
+then
+```
+mysql -udev -pdev dev
+```
+to exit from docker bash, run ```exit``` command
+
 # Run composer command
 
 ```
@@ -85,7 +96,7 @@ Example:
 docker run --rm --interactive --tty --volume $PWD:/app composer install
 ```
 
-# run npm command
+# Run npm command
 
 ```
 docker run -v "$PWD":/usr/src/app -w /usr/src/app node npm command_here
