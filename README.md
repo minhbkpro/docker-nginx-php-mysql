@@ -2,7 +2,7 @@
 
 Docker: https://www.docker.com/get-docker
 
-# Install
+# Install & run
 
 Clone repo to your project's root or download and copy ```docker-compose.yml``` and ```docker``` folder to your project's root.
 
@@ -31,9 +31,9 @@ Suppose, your project folder like this:
 └── ...
 ```
 
-Then in ```/docker/nginx/default.template```
+Then in ```/docker/nginx/default.template```, change this line ```root /usr/src/www;``` to ```root /usr/src/www/app/public;```
 
-Change this line ```root /usr/src/www;``` to ```root /usr/src/www/app/public;```
+Run ```docker-compose up -d``` command again to apply nginx config.
 
 # Access website
 
