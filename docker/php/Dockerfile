@@ -5,7 +5,7 @@ FROM php:${version}
 WORKDIR /usr/src/www
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libicu-dev \
     g++
