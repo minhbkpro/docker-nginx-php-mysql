@@ -19,3 +19,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     php-curl \
     composer \
     curl
+
+# install codeception
+RUN curl -LsS https://codeception.com/codecept.phar -o /usr/local/bin/codecept
+RUN chmod a+x /usr/local/bin/codecept

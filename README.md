@@ -84,20 +84,19 @@ mysql -udev -pdev dev
 ```
 to exit from docker bash, run ```exit``` command
 
-# Run composer command
+# Commands
 
+Composer
 ```
 docker exec -it ubuntu composer command_here
 ```
 
-Example:
-
-```
-docker exec -it ubuntu composer install
-```
-
-# Run npm command
-
+npm
 ```
 docker run -v "$PWD":/usr/src/app -w /usr/src/app node npm command_here
+```
+
+Codeception
+```
+docker exec -it ubuntu codecept command_here
 ```
