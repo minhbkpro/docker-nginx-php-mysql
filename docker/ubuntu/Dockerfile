@@ -11,4 +11,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     libicu-dev \
     g++ \
     php \
-    php-intl
+    php-intl \
+    php-mbstring \
+    composer
