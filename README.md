@@ -4,7 +4,7 @@ Docker: https://www.docker.com/get-docker
 
 # Install & run
 
-Clone repo to your project's root or download and copy ```docker-compose.yml``` and ```docker``` folder to your project's root.
+Clone repo to your project's root or download and copy ```docker-compose.yml```, ```.env``` and ```docker``` folder to your project's root. If you already have ```.env``` file then merge it.
 
 Build: ```docker-compose build --no-cache```
 
