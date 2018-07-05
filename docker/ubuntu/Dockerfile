@@ -16,4 +16,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     php-mbstring \
     php-simplexml \
     php-zip \
-    composer
+    php-curl \
+    composer \
+    curl
