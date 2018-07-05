@@ -10,7 +10,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libicu-dev \
     g++ \
+    git \
     php \
     php-intl \
     php-mbstring \
+    php-simplexml \
+    php-zip \
     composer
