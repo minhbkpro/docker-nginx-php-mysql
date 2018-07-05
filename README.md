@@ -87,13 +87,13 @@ to exit from docker bash, run ```exit``` command
 # Run composer command
 
 ```
-docker run --rm --interactive --tty --volume $PWD:/app composer command_here
+docker exec -it ubuntu composer command_here
 ```
 
 Example:
 
 ```
-docker run --rm --interactive --tty --volume $PWD:/app composer install
+docker exec -it ubuntu composer install
 ```
 
 # Run npm command
