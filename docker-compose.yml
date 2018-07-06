@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+
   nginx:
     image: nginx:alpine
     container_name: nginx
@@ -17,6 +18,7 @@ services:
     depends_on:
       - php
       - mysql
+
   php:
     build:
       context: ./docker/php
@@ -26,6 +28,7 @@ services:
     volumes:
       - ./docker/php/php.ini:/usr/local/etc/php/conf.d/php.ini
       - .:/usr/src/www
+
   mysql:
     image: mysql:${MYSQL_VERSION}
     container_name: ${MYSQL_HOST}
@@ -41,6 +44,7 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     command: --innodb-flush-method=O_DSYNC --innodb-use-native-aio=0
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
@@ -51,6 +55,7 @@ services:
       - PMA_HOST=${MYSQL_HOST}
     depends_on:
       - mysql
+
   ubuntu:
     build:
       context: ./docker/ubuntu
@@ -61,3 +66,17 @@ services:
       - .:/usr/src/www
     stdin_open: true
     tty: true
+
+  selenium:
+    image: selenium/hub:3.12.0-cobalt
+    container_name: selenium
+    ports:
+      - 4444:4444
+
+  chrome:
+    image: selenium/node-chrome:3.12.0-cobalt
+    depends_on:
+      - selenium
+    environment:
+      - HUB_HOST=selenium
+      - HUB_PORT=4444
