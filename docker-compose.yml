@@ -18,10 +18,7 @@ services:
       - php
       - mysql
   php:
-    build:
-      context: ./docker/php
-      args:
-        version: ${PHP_VERSION}
+    image: minhbkpro/php:${PHP_VERSION}
     container_name: php
     volumes:
       - ./docker/php/php.ini:/usr/local/etc/php/conf.d/php.ini
@@ -51,12 +48,9 @@ services:
       - PMA_HOST=${MYSQL_HOST}
     depends_on:
       - mysql
-  ubuntu:
-    build:
-      context: ./docker/ubuntu
-      args:
-        version: ${UBUNTU_VERSION}
-    container_name: ubuntu
+  utils:
+    image: minhbkpro/utils
+    container_name: utils
     volumes:
       - .:/usr/src/www
     stdin_open: true
