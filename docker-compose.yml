@@ -74,6 +74,7 @@ services:
 
   chrome:
     image: selenium/node-chrome:3.12.0-cobalt
+    container_name: chrome
     depends_on:
       - selenium
     environment:
