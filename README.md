@@ -84,6 +84,22 @@ mysql -udev -pdev dev
 ```
 to exit from docker bash, run ```exit``` command
 
+# Run codeception acceptance test with selenium and chrome
+
+> For more information about selenium docker images, visit https://github.com/SeleniumHQ/docker-selenium
+
+Init acceptance test:
+```
+docker exec -it ubuntu codecept init acceptance
+```
+
+Replace ```codeception.yml``` file content with ```codeception.template.yml```
+
+Run sample test:
+```
+docker exec -it ubuntu codecept run
+```
+
 # Commands
 
 Composer
