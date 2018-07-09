@@ -20,6 +20,7 @@ modules:
       # this "selenium" is the name of selenium container where selenium server running,
       # you can change it to selenium ip address instead, such as 0.0.0.0 (osx) or 192.168.99.100 (window).
       host: selenium
+      # host: 192.168.99.100    // on window
 
       # this is default port of selenium server.
       port: 4444
