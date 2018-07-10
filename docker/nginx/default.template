@@ -4,11 +4,6 @@ server {
   server_name ${NGINX_HOST};
 
   listen 80;
-  # listen 443 ssl;
-
-  # ssl_certificate /etc/ssl/server.pem;
-  # ssl_certificate_key /etc/ssl/server.key;
-  # ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 
   index index.php index.html;
   root /usr/src/www;
