@@ -51,6 +51,12 @@ On OSX, Linux:
 | website    | 0.0.0.0:8000 |
 | phpMyAdmin | 0.0.0.0:8088 |
 
+Access via https
+
+Ex: https://127.0.0.1:8001
+
+When browser show warning, just ignore it!
+
 # Connect to MySQL
 
 From your website:
