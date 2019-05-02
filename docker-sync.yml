@@ -3,4 +3,8 @@ version: "2"
 syncs:
   sync-volume:
     src: '.'
-    sync_excludes: ['.git', '.idea', 'mysql', 'docker']
+    sync_excludes: ['.idea', '.git', '.gitignore', '.gitattributes', '.env.example', 'docker', 'docker-compose.yml',
+                    'docker-sync.yml', 'mysql', 'Gemfile.lock', 'Gemfile', 'config.rb', 'storage', 'sass',
+                    'sass-cache', '.sass-cache', 'composer.json', 'composer-lock.json' , 'bower.json',
+                    'bower_components',
+                    'package.json', 'package-lock.json', 'node_modules', 'Gruntfile*', '*.coffee', '*.scss', '*.sass']
