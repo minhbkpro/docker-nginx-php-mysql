@@ -3,4 +3,4 @@ version: "2"
 syncs:
   sync-volume:
     src: '.'
-    sync_excludes: ['.idea']
+    sync_excludes: ['.git', '.idea', 'mysql', 'docker']
