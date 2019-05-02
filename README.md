@@ -4,11 +4,15 @@ Docker: https://www.docker.com/get-docker
 
 # Install & run
 
-Clone repo to your project's root or download and copy ```docker-compose.yml```, ```.env``` and ```docker``` folder to your project's root. If you already have ```.env``` file then merge it.
+Clone repo to your project's root or download and copy ```docker-compose.yml```, ```docker-sync.yml```, ```.env```
+ and ```docker``` folder 
+to your project's root. If you already have ```.env``` file then merge it.
 
 Build: ```docker-compose build --no-cache```
 
-Run: ```docker-compose up -d```
+Run: ```docker-sync-stack start```
+
+This will start docker-sync and docker-compose.
 
 # Config webroot
 
