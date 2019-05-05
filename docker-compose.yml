@@ -69,7 +69,7 @@ services:
     image: minhbkpro/utils
     container_name: utils
     volumes:
-      - .:/usr/src/www
+      - sync-volume:/usr/src/www
     stdin_open: true
     tty: true
 
